@@ -26,6 +26,7 @@ body {
     padding-bottom: 90px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .nav-logo i {
