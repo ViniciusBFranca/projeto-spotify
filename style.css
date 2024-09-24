@@ -90,11 +90,12 @@ body {
     cursor: pointer;
     border-radius: 20px;
 
-main {
-    padding: 24px;
+ main {
+    padding:24px ;
     flex-grow: 1;
     overflow-y: auto;
-}
+ }
+
 
 .search-bar {
     display: flex;
@@ -117,7 +118,7 @@ main {
 
 .artists-grid, .albums-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(autofill, minmax(180px, 1fr));
     gap: 24px;
     margin-bottom: 40px;
 }
@@ -138,7 +139,7 @@ main {
     background-color: #282828;
 }
 
-.artist-card img, .album-card img {
+.artist-card image, .album-card image {
     width: 100%;
     border-radius: 50%;
     margin-bottom: 16px;
@@ -166,7 +167,7 @@ main {
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(90de #AF2396, #509BF5);
+    background: linear-gradient(90deg #AF2396, #509BF5);
     display: flex;
     justify-content: space-between;
     align-items: center;
