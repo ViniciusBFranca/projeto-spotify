@@ -89,6 +89,7 @@ body {
     margin-top: 16px;
     cursor: pointer;
     border-radius: 20px;
+}
 
  main {
     padding:24px ;
@@ -118,7 +119,7 @@ body {
 
 .artists-grid, .albums-grid {
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 24px;
     margin-bottom: 40px;
 }
@@ -167,7 +168,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(90deg #AF2396, #509BF5);
+    background: linear-gradient( #AF2396, #509BF5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,5 +189,4 @@ body {
     border: none;
     padding: 12px 20px;
     font-weight: 600;
-}
 }
