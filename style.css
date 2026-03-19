@@ -16,7 +16,7 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sidebar {
@@ -189,4 +189,68 @@ body {
     border: none;
     padding: 12px 20px;
     font-weight: 600;
+}
+
+
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .artists-grid, 
+    .albums-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .banner button {
+        width: 100%;
+    }
+}
+
+/* ===== CELULAR PEQUENO ===== */
+@media (max-width: 480px) {
+
+    .artists-grid, 
+    .albums-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-bar {
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none !important;
+    }
 }
